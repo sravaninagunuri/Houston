@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CardHub-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Houston" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="86e-PD-3iI">
+                                <rect key="frame" x="171.66666666666666" y="67" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="LfZ-LF-Ete"/>
+                                    <constraint firstAttribute="height" constant="50" id="ppF-ez-Nb6"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXH-pp-0Py">
+                                <rect key="frame" x="63.666666666666657" y="166" width="266" height="319"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fg-ck-dbz">
+                                        <rect key="frame" x="3" y="4" width="258" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXM-eS-V12">
+                                        <rect key="frame" x="0.0" y="28" width="266" height="247"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.26274511220000002" green="0.47843140360000003" blue="0.80392158030000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJK-k3-JrQ">
+                                <rect key="frame" x="134" y="534" width="128.33333333333337" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Random card"/>
+                                <connections>
+                                    <action selector="randomCardBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M8w-F9-Oba"/>
+                                    <action selector="randonCardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R93-wL-koK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpK-Qq-d7v">
+                                <rect key="frame" x="134" y="616.33333333333337" width="128.33333333333337" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next card"/>
+                                <connections>
+                                    <action selector="nextCardBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ktq-f4-tOG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DM5-CC-WEm">
+                                <rect key="frame" x="134" y="698.66666666666663" width="128.33333333333337" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Card Selector"/>
+                                <connections>
+                                    <action selector="cardSelectorBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G1g-ED-p52"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UXH-pp-0Py" firstAttribute="top" secondItem="86e-PD-3iI" secondAttribute="bottom" constant="49" id="5eY-x3-bmb"/>
+                            <constraint firstItem="tJK-k3-JrQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134" id="Cn3-Re-t5y"/>
+                            <constraint firstItem="86e-PD-3iI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="171.66666666666666" id="KQE-ug-iji"/>
+                            <constraint firstItem="mpK-Qq-d7v" firstAttribute="top" secondItem="tJK-k3-JrQ" secondAttribute="bottom" constant="47.999999999999886" id="LcL-SW-ieJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UXH-pp-0Py" secondAttribute="trailing" constant="63.333333333333371" id="Prg-T5-j7q"/>
+                            <constraint firstItem="tJK-k3-JrQ" firstAttribute="leading" secondItem="mpK-Qq-d7v" secondAttribute="leading" id="g3v-ho-ubO"/>
+                            <constraint firstItem="UXH-pp-0Py" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63.666666666666657" id="gSI-eP-XIb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="86e-PD-3iI" secondAttribute="trailing" constant="171.33333333333334" id="k9Q-vd-NTH"/>
+                            <constraint firstItem="86e-PD-3iI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="qKz-tu-JRF"/>
+                            <constraint firstAttribute="bottom" secondItem="UXH-pp-0Py" secondAttribute="bottom" constant="367" id="siD-Yj-QqH"/>
+                            <constraint firstItem="tJK-k3-JrQ" firstAttribute="trailing" secondItem="DM5-CC-WEm" secondAttribute="trailing" id="ulm-e6-DfX"/>
+                            <constraint firstItem="tJK-k3-JrQ" firstAttribute="top" secondItem="UXH-pp-0Py" secondAttribute="bottom" constant="49" id="vcS-ip-O8w"/>
+                            <constraint firstItem="tJK-k3-JrQ" firstAttribute="trailing" secondItem="mpK-Qq-d7v" secondAttribute="trailing" id="ywx-OS-YfJ"/>
+                            <constraint firstItem="tJK-k3-JrQ" firstAttribute="leading" secondItem="DM5-CC-WEm" secondAttribute="leading" id="za4-VR-MEb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="CardHub" id="qyT-nM-aTa"/>
+                    <connections>
+                        <outlet property="cardImageIcon" destination="86e-PD-3iI" id="Pe4-6h-Xls"/>
+                        <outlet property="cardTextDescription" destination="bXM-eS-V12" id="R28-de-ekd"/>
+                        <outlet property="cardTitle" destination="3Fg-ck-dbz" id="8cw-wN-w2Q"/>
+                        <outlet property="icon" destination="86e-PD-3iI" id="FQf-SD-fKq"/>
+                        <outlet property="randomBtn" destination="tJK-k3-JrQ" id="BzF-Dc-9Vl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="907.63358778625945" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
